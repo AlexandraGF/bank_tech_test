@@ -7,7 +7,7 @@ class Statement
   end
 
   def deposit(amount)
-
+    @total = amount
   end
 
 end
