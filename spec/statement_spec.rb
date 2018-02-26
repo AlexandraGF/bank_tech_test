@@ -32,4 +32,11 @@ describe Statement do
     expect(statement.storage[0]).to eq("14/01/2018 || 2000.00 || 2000.00")
   end
 
+  it 'after withdrawal, checks the account storage has the new transaction with date, amount, balance' do
+    statement = Statement.new
+    statement.deposit('14/01/2018', 2000)
+    statement.withdrawal('14/01/2018', 1000)
+    expect(statement.storage.length).to eq(2)
+  end
+
 end
