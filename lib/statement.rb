@@ -1,17 +1,21 @@
 class Statement
 
-attr_reader :balance
+attr_reader :balance, :storage, :date
 
-  def initialize(date, balance = 0)
+  def initialize(balance = 0)
     @date = date
     @balance = balance
+    @storage = []
   end
 
-  def deposit(amount)
-    @balance = amount
+  def deposit(date, amount)
+    @date = date
+    @balance += amount
+    @storage.push("#{date} || #{amount.round(2)} || #{@balance}")
   end
 
-  def withdrawal(amount)
+  def withdrawal(date, amount)
+    @date = date
     @balance -= amount
   end
 
