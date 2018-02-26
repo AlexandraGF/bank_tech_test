@@ -22,7 +22,7 @@ I want to be able to see an account statement containing date, amount(credit/deb
 ```
 git clone git@github.com:AlexandraGF/bank_tech_test.git
 ```
-2. Change directory by ```cd bank_tech_test``` and type ```
+2. Change directory by typing ```cd bank_tech_test``` and then  ```
 bundle```
 3. Open IRB by typing ```irb``` on you terminal
 4. Type the following commands, one at a time and press enter after each one
@@ -43,3 +43,7 @@ statement.show  (will print all of the transactions on screen)
 ```
 5. After statement.show, you can either deposit or withdrawal as many times you want and then statement.show to display all the transactions together.
 6. When you want to finish the session, type ```exit``` on your terminal
+
+## Screenshoots from running the app in the terminal:
+
+![alt tag](https://github.com/AlexandraGF/bank_tech_test/blob/master/public/run_app.png)
