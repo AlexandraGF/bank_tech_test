@@ -11,7 +11,7 @@ attr_reader :balance, :storage, :date
   def deposit(date, amount)
     @date = date
     @balance += amount
-    @storage.push("#{date} || #{amount.round(2)} || #{@balance}")
+    @storage << "#{date} || #{amount}.00 || #{@balance}.00"
   end
 
   def withdrawal(date, amount)
@@ -21,7 +21,9 @@ attr_reader :balance, :storage, :date
 
   def show
     "date || credit || debit || balance"
-    "14/01/2018 || || 100.00 || 1700.00"
+    @storage.each do |item|
+      puts item
+    end
   end
 
 end
