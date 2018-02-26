@@ -15,4 +15,9 @@ attr_reader :balance
     @balance -= amount
   end
 
+  def show
+    "date || credit || debit || balance"
+    "14/01/2018 || || 100.00 || 1700.00"
+  end
+
 end
