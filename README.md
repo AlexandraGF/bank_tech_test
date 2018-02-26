@@ -19,7 +19,8 @@ I want to be able to see an account statement containing date, amount(credit/deb
 ## Run the bank account statement app
 
 1. Open your terminal and clone this repository
-```git clone git@github.com:AlexandraGF/bank_tech_test.git
+```
+git clone git@github.com:AlexandraGF/bank_tech_test.git
 ```
 2. Change directory by ```cd bank_tech_test``` and type ```
 bundle```
@@ -40,5 +41,5 @@ statement.withdrawal("15/02/2018", 2000) (make a withdrawal with a date and amou
 ```
 statement.show  (will print all of the transactions on screen)
 ```
-After statement.show, you can either deposit or withdrawal as many times you want and then statement.show to display all the transactions together.
-5. When you want to finish the session, type ```exit``` on your terminal
+5. After statement.show, you can either deposit or withdrawal as many times you want and then statement.show to display all the transactions together.
+6. When you want to finish the session, type ```exit``` on your terminal
