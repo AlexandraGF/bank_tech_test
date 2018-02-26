@@ -44,6 +44,6 @@ statement.show  (will print all of the transactions on screen)
 5. After statement.show, you can either deposit or withdrawal as many times you want and then statement.show to display all the transactions together.
 6. When you want to finish the session, type ```exit``` on your terminal
 
-## Screenshoots from running the app in the terminal:
+## Screenshoot from running the app in the terminal:
 
 ![alt tag](https://github.com/AlexandraGF/bank_tech_test/blob/master/public/run_app.png)
