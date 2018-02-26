@@ -1,6 +1,6 @@
-### Bank Tech Test
+## Bank Tech Test
 
-## User Stories
+### User Stories
 
 ```
 As a client
