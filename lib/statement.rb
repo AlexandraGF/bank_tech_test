@@ -11,17 +11,18 @@ attr_reader :balance, :storage, :date
   def deposit(date, amount)
     @date = date
     @balance += amount
-    @storage << "#{date} || #{amount}.00 || #{@balance}.00"
+    @storage << "#{date} || #{amount}.00 || || #{@balance}.00"
   end
 
   def withdrawal(date, amount)
     @date = date
     @balance -= amount
+    @storage << "#{date} || || #{amount}.00 || #{@balance}.00"
   end
 
   def show
-    "date || credit || debit || balance"
-    @storage.each do |item|
+    puts "date || credit || debit || balance"
+    @storage.reverse.each do |item|
       puts item
     end
   end

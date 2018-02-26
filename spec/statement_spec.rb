@@ -29,7 +29,7 @@ describe Statement do
   it 'account statement can be printed on screen with date, deposit/withdrawal and new balance' do
     statement = Statement.new
     statement.deposit("14/01/2018", 2000)
-    expect(statement.storage[0]).to eq("14/01/2018 || 2000.00 || 2000.00")
+    expect(statement.storage[0]).to eq("14/01/2018 || 2000.00 || || 2000.00")
   end
 
   it 'after withdrawal, checks the account storage has the new transaction with date, amount, balance' do
