@@ -1,13 +1,18 @@
 class Statement
 
-  def initialize(date, total = 0, balance = 0)
+attr_reader :balance
+
+  def initialize(date, balance = 0)
     @date = date
-    @total = total
     @balance = balance
   end
 
   def deposit(amount)
-    @total = amount
+    @balance = amount
+  end
+
+  def withdrawal(amount)
+    @balance -= amount
   end
 
 end
