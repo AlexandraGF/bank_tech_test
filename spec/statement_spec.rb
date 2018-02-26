@@ -12,4 +12,12 @@ describe Statement do
     total = statement.deposit(2000)
     expect(total).to eq(2000)
   end
+
+  it 'after withdrawal, new balance should be lower' do
+    statement = Statement.new('14/01/2018')
+    total = statement.deposit(2000)
+    withdrawal = statement.withdrawal(500)
+    expect(total).to eq(1500)
+  end
+
 end
